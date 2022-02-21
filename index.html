@@ -2,13 +2,10 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daithan Kitchens | Home</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/747bc9c58e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,16 +13,15 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-
-    <nav class="nav-bar">
+    <nav class="navbar">
         <div class="max-width">
-            <div class="logo"></div>
+            <div class="logo"><img src="/images/DK-personalLogo.wht copy.png" alt="" style="width: 80px"></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn>">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -34,13 +30,14 @@
         </div>
     </nav>
 
+
     <!--Home Section-->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Daithan Kitchens</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div class="text-3">And I'm a <span class="typing">UX Designer</span></div>
                 <a href="#">Hire me></a>
             </div>
         </div>
@@ -52,51 +49,59 @@
             <h2 class="title">About Me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/Dai Bex Engagement Session 1-3153 copy.jpg" alt="profile photo">
+                    <img src="images/Sticky Email Pic.jpg" alt="profile photo">
                 </div>
-                <div class="column-right">
-                    <div class="text">I'm Daithan and I'm a <span class="typing-2"></span></div>
+                <div class="column right">
+                    <div class="text">I'm Daithan and I'm a <span class="typing-2">UX Designer</span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque
                         autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus
                         accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus
                         veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis
                         beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                    <a href="#">Download Resume</a>
+                    <a href="#">Download resume</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Services Section-->
-    <section class="services" id="services">
+    <!--Projects Section-->
+    <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">My Services</h2>
-            <div class="serv-content">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                        <div class="test">UX Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
-                        </p>
+                        <img src="images/project placeholder.jpeg" alt="">
+                        <div class="text">Sample Project 1</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fa-solid fa-video"></i>
-                        <i class="fa-solid fa-camera"></i>
-                        <div class="test">Photo & Video</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
-                        </p>
+                        <img src="images/project placeholder.jpeg" alt="">
+                        <div class="text">Sample Project 2</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fa-solid fa-code"></i>
-                        <div class="test">Front End Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo
-                            enim.
-                        </p>
+                        <img src="images/project placeholder.jpeg" alt="">
+                        <div class="text">Sample Project 3</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/project placeholder.jpeg" alt="">
+                        <div class="text">Sample Project 4</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/project placeholder.jpeg" alt="">
+                        <div class="text">Sample Project 5</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -157,44 +162,36 @@
         </div>
     </section>
 
-    <!--Projects Section-->
-    <section class="projects" id="projects">
+    <!--Services Section-->
+    <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="carousel owl-carousel">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <img src="" alt="">
-                        <div class="text">Sample Project 1</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                        <div class="test">UX Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="" alt="">
-                        <div class="text">Sample Project 2</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-camera"></i>
+                        <div class="test">Photo & Video</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="" alt="">
-                        <div class="text">Sample Project 3</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="" alt="">
-                        <div class="text">Sample Project 4</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="" alt="">
-                        <div class="text">Sample Project 5</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <i class="fa-solid fa-code"></i>
+                        <div class="test">Front End Development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo
+                            enim.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -204,7 +201,7 @@
     <!--Contact Section-->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Contact Me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
@@ -219,7 +216,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt>"></i>
+                            <i class="fa-solid fa-location-pin"></i>
                             <div class="info">
                                 <div class="head">Address</div>
                                 <div class="sun-title">Atlanta, GA</div>
@@ -227,13 +224,14 @@
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
-                            <div class="info"></div>
-                            <div class="head">Email</div>
-                            <div class="sun-title">abc@gmail.com</div>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sun-title">daithanux@gmail.com</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column-right">
+                <div class="column right">
                     <div class="text">Message me</div>
                     <form action="#">
                         <div class="fields">
@@ -264,51 +262,6 @@
         <span>Created By <a href="https://www.linkedin.com/in/daithankitchens/">Daithan Kitchens</a> | <span
                 class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
-
-    <script src="script.js"></script>
-
-
-
-
-    <!--    <header class="navigation">
-        <div class="inline-block logo">
-            <img src="/images/DK-personalLogo.wht copy.png" style="height: 100px;" alt="logo">
-        </div>
-        <nav class="inline-block">
-            <ul>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Skills</li>
-                <li class="inline-block">Work</li>
-                <li class="inline-block">Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="heroimg grid-container1">
-        <div class="item1">
-            <h1>I’m Daithan, a wickedly curious UX Designer based in Atlanta.</h1>
-            <p>I combine years of project management experience and creative strategy with principles of Design Thinking
-                to help drive teams towards innovative solutions and to deliver kick-ass results.</p>
-        </div>
-        <div class="item2">
-            <img class="headshot" src="/images/Dai Bex Engagement Session 1-3153 copy.jpg">
-        </div>
-        <div class="item3">
-            <button>Download Resume</button>
-        </div>
-        <div class="item4"></div>
-
-        </div>
-    </section> 
-   
-    <footer>
-        <ul>
-            <li class="inline-block">About</li>
-            <li class="inline-block">Skills</li>
-            <li class="inline-block">Work</li>
-            <li class="inline-block">Contact</li>
-        </ul>
-    </footer> 
--->
 
 </body>
 
