@@ -246,7 +246,7 @@ section .title::after {
 
 .home .home-content a:hover {
   color: crimson;
-  background: none;
+  background: white;
 }
 
 /* about section styling */
