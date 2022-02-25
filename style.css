@@ -7,72 +7,6 @@
   text-decoration: none;
 }
 
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
-
-/* navbar styling */
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  background: crimson;
-  z-index: 999;
-  padding: 5px 0;
-  font-family: "Ubuntu", sans-serif;
-  transition: all 0.3s ease;
-}
-
-.navbar .sticky {
-  padding: 15px 0;
-  background: #141850;
-}
-
-.navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .logo a {
-  color: white;
-  font-size: 35px;
-  font-weight: 600;
-}
-
-.navbar .logo a span {
-  color: #141850;
-  transition: all 0.3s ease;
-}
-
-.navbar .sticky .logo a span {
-  color: white;
-}
-
-.navbar .menu li {
-  list-style: none;
-  display: inline-block;
-}
-
-.navbar .menu li a {
-  display: block;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-  transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover {
-  color: #141850;
-}
-
-.navbar .sticky .menu li a:hover {
-  color: white;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -82,6 +16,7 @@ html {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: white;
 }
@@ -91,11 +26,17 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: #555;
 }
 
 section {
   padding: 100px 0;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
 
 .about,
@@ -149,6 +90,66 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+/* navbar styling */
+
+.navbar {
+  position: fixed;
+  background: none;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background: crimson;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: crimson;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky a {
+  color: #fff;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
 /* menu btn styling */
 
 .menu-btn {
@@ -162,7 +163,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #141850;
+  background: crimson;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -204,7 +205,7 @@ section .title::after {
 .home .max-width {
   width: 100%;
   display: flex;
-  margin: auto 0 auto 40px;
+  /*margin: auto 0 auto 40px;*/
 }
 
 .home .max-width .row {
@@ -246,7 +247,7 @@ section .title::after {
 
 .home .home-content a:hover {
   color: crimson;
-  background: white;
+  background: none;
 }
 
 /* about section styling */
@@ -498,7 +499,7 @@ section .title::after {
   border-color: white;
 }
 
-.owl-dot {
+.owl-dots {
   text-align: center;
   margin-top: 20px;
 }
@@ -509,7 +510,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #141850 !important;
+  border: 2px solid crimson !important;
   transition: all 0.3s ease;
 }
 
@@ -518,9 +519,9 @@ section .title::after {
   border-radius: 14px;
 }
 
-.owl-dot .active,
+.owl-dot.active,
 .owl-dot:hover {
-  background: #141850 !important;
+  background: crimson !important;
 }
 
 /* contact section styling */
@@ -638,8 +639,6 @@ section .title::after {
   background: none;
 }
 
-
-
 /* footer section styling */
 footer {
   background: #111;
@@ -681,6 +680,7 @@ footer span a:hover {
   .menu-btn i.active:before {
     content: "\f00d";
   }
+
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -692,17 +692,21 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
     display: block;
   }
+
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
@@ -713,6 +717,7 @@ footer span a:hover {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .max-width {
     max-width: 930px;
   }
