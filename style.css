@@ -455,7 +455,7 @@ section .title::after {
 }
 
 .skills-content .right .cw::before {
-  width: 85%;
+  width: 90%;
 }
 
 /* Projects section styling */
@@ -613,7 +613,7 @@ section .title::after {
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
-  border-color: #b3b3b3;
+  border-color: crimson;
 }
 
 .contact .right form .textarea textarea {
@@ -645,6 +645,19 @@ section .title::after {
 .right form .button-area button:hover {
   color: crimson;
   background: none;
+}
+
+::placeholder {
+  color: rgb(187, 187, 187);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: rgb(187, 187, 187);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgb(187, 187, 187);
 }
 
 /* footer section styling */
