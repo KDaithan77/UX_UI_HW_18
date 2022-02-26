@@ -43,6 +43,7 @@ $(document).ready(function () {
       "Photographer",
       "Videographer",
       "Freelancer",
+      "Full of Ideas"
     ],
     typeSpeed: 100,
     backSpeed: 60,
@@ -58,6 +59,7 @@ $(document).ready(function () {
       "Photographer",
       "Videographer",
       "Freelancer",
+      "Full of Ideas",
     ],
     typeSpeed: 100,
     backSpeed: 60,
